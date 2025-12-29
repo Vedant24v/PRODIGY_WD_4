@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Vyawhare | Full Stack Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <header class="header">
+        <a href="#" class="logo">VEDANT<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact" class="btn-contact">Let's Talk</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <p class="greeting">HELLO, I AM</p>
+            <h1>VEDANT VYAWHARE</h1>
+            <h3 class="job-title">I am a <span class="multiple-text"></span></h3>
+            <p class="description">
+                A digital architect transforming complex logic into clean, high-performance web experiences. 
+                Specializing in responsive design and modern UI/UX patterns.
+            </p>
+            
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/vedant-vyawhare/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Vedant24v" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/vedant24v/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <img src="png1.png" alt="Vedant Profile">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="png5.png" alt="About Vedant">
+                <div class="img-overlay"></div>
+            </div>
+            <div class="about-text">
+                <h2>Behind the <span class="blue-text">Code</span></h2>
+                <h4>Engineering Student & Creative Developer</h4>
+                <p>
+                    I bridge the gap between <strong>Engineering Logic</strong> and <strong>Creative Design</strong>. Currently pursuing my B.Tech in Computer Science, I focus on building scalable applications that look as good as they perform. My goal is to craft digital experiences that leave a lasting impact.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item glass-card">
+                        <i class='bx bxs-folder-open'></i>
+                        <h3>04+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <i class='bx bxs-medal'></i>
+                        <h3>03</h3>
+                        <p>Months Exp.</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <i class='bx bxs-terminal'></i>
+                        <h3>10+</h3>
+                        <p>Tech Tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">Technical <span class="blue-text">Arsenal</span></h2>
+        <div class="skills-wrapper">
+            <div class="skill-card anim-float" style="--d:0s">
+                <i class='bx bxl-html5' style="color: #e34c26;"></i>
+                <h3>HTML5 & CSS3</h3>
+                <div class="progress-bar"><div class="fill" style="width: 95%"></div></div>
+            </div>
+            <div class="skill-card anim-float" style="--d:0.5s">
+                <i class='bx bxl-javascript' style="color: #f0db4f;"></i>
+                <h3>JavaScript (ES6+)</h3>
+                <div class="progress-bar"><div class="fill" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-card anim-float" style="--d:1s">
+                <i class='bx bxl-react' style="color: #61dafb;"></i>
+                <h3>React & UI Logic</h3>
+                <div class="progress-bar"><div class="fill" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-card anim-float" style="--d:1.5s">
+                <i class='bx bxl-nodejs' style="color: #3C873A;"></i>
+                <h3>Node.js & Backend</h3>
+                <div class="progress-bar"><div class="fill" style="width: 75%"></div></div>
+            </div>
+            <div class="skill-card anim-float" style="--d:2s">
+                <i class='bx bxl-git' style="color: #F1502F;"></i>
+                <h3>Git & Version Control</h3>
+                <div class="progress-bar"><div class="fill" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card anim-float" style="--d:2.5s">
+                <i class='bx bxs-data' style="color: #007bff;"></i>
+                <h3>API Integration</h3>
+                <div class="progress-bar"><div class="fill" style="width: 85%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Few <span class="blue-text">Projects</span></h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="png3.png" alt="Atmosphere AI">
+                    <div class="shine"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Atmosphere AI</h3>
+                    <p>Advanced Weather Dashboard with Geolocation.</p>
+                    <a href="https://github.com/Vedant24v" target="_blank" class="read-more"><i class='bx bx-right-arrow-alt'></i> View Project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="png4.png" alt="Neon Toe">
+                    <div class="shine"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Neon Arena</h3>
+                    <p>Cyberpunk Tic-Tac-Toe with Minimax AI.</p>
+                    <a href="https://github.com/Vedant24v" target="_blank" class="read-more"><i class='bx bx-right-arrow-alt'></i> View Project</a>
+                </div>
+            </div>
+            
+             <div class="project-card">
+                <div class="project-img">
+                    <img src="png2.png" alt="Stopwatch">
+                    <div class="shine"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Quantum Timer</h3>
+                    <p>High-precision stopwatch with lap history.</p>
+                    <a href="https://github.com/Vedant24v" target="_blank" class="read-more"><i class='bx bx-right-arrow-alt'></i> View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get in <span class="blue-text">Touch</span></h2>
+        
+        <div class="contact-container">
+            <div class="email-box anim-float" style="--d:0s">
+                <div class="icon"><i class='bx bx-envelope'></i></div>
+                <div class="info">
+                    <h3>Email Me</h3>
+                    <p>vedantvyawhare2000@gmail.com</p>
+                </div>
+                <a href="mailto:vedantvyawhare2000@gmail.com" class="btn-email">Send Email <i class='bx bx-send'></i></a>
+            </div>
+
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <textarea placeholder="Your Message..." rows="6" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message <i class='bx bx-paper-plane'></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Vedant Vyawhare. Crafted with Precision.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
