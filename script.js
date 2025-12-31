@@ -3,31 +3,55 @@
 const cursor = document.querySelector(".cursor");
 const dot = document.querySelector(".cursor-dot");
 
-document.addEventListener("mousemove", (e) => {
-    dot.style.left = e.clientX + "px";
-    dot.style.top = e.clientY + "px";
-    setTimeout(() => {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    }, 40); 
-});
-
-document.querySelectorAll('a, button, .project-card, .skill-card, .glass-card').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        cursor.style.transform = "scale(2.5)";
-        cursor.style.borderColor = "transparent";
-        cursor.style.background = "rgba(0, 123, 255, 0.1)";
+// Only enable custom cursor logic on non-touch devices to save performance
+if (window.matchMedia("(hover: hover)").matches) {
+    document.addEventListener("mousemove", (e) => {
+        dot.style.left = e.clientX + "px";
+        dot.style.top = e.clientY + "px";
+        setTimeout(() => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        }, 40); 
     });
-    item.addEventListener('mouseleave', () => {
-        cursor.style.transform = "scale(1)";
-        cursor.style.borderColor = "var(--primary)";
-        cursor.style.background = "transparent";
+
+    document.querySelectorAll('a, button, .project-card, .skill-card, .glass-card').forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            cursor.style.transform = "scale(2.5)";
+            cursor.style.borderColor = "transparent";
+            cursor.style.background = "rgba(0, 123, 255, 0.1)";
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.style.transform = "scale(1)";
+            cursor.style.borderColor = "var(--primary)";
+            cursor.style.background = "transparent";
+        });
+    });
+}
+
+// --- MOBILE MENU TOGGLE ---
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+// Close menu when clicking a link
+navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
     });
 });
 
 window.addEventListener("scroll", function(){
     const header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 50);
+    
+    // Auto-close menu on scroll
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 });
 
 const typed = new Typed('.multiple-text', {
