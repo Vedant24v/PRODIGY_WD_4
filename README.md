@@ -1,5 +1,3 @@
-# PRODIGY_WD_4
-
 ### 🏆 Digital Portfolio
 
 This professional portfolio serves as a central hub, showcasing the technical journey, skills, and deployed applications of **Vedant Vyawhare**.
@@ -9,9 +7,8 @@ This professional portfolio serves as a central hub, showcasing the technical jo
 ## 👨‍💻 Developer Information
 
 * **Name:** Vedant Vyawhare
-* **Role:** Full Stack Web Development Intern
 * **Education:** B.Tech in Computer Science
-* **Project:** Task-05: Personal Portfolio Website
+* **Project:** Personal Portfolio Website
 
 ---
 
@@ -52,5 +49,4 @@ This professional portfolio serves as a central hub, showcasing the technical jo
 ---
 
 ## 📜 License
-
-Developed for the **Prodigy Infotech** internship program. All rights reserved © 2025 Vedant Vyawhare.
+ All rights reserved © 2025 Vedant Vyawhare.
